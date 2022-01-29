@@ -44,7 +44,7 @@ main{
 
 }
 .img-header{
-  
+ background: transparent; 
 }
 
 .header-list{
@@ -54,7 +54,7 @@ main{
 
 .header-list li{
   display: inline-block;
-  align-self; color-interpolation-filters; 
+  align-self:end;
   margin: 10px 20px;
   text-transform:capitalize;
 }
