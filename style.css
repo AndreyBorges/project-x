@@ -8,6 +8,7 @@
   box-sizing: border-box;
   outline: none;
   word-wrap: break-word;
+  
 }
 
 li{
@@ -21,6 +22,7 @@ a{
 /*Retirar depois*/
 img{
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* Content */
@@ -40,7 +42,7 @@ main{
 .content-header{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 40px 0;
 
 }
 .img-header{
@@ -61,6 +63,44 @@ main{
 
 
 /* Content 1 */
+
+.content-01{
+  max-height: 500px;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  flex-basis: 500px;
+  flex-wrap: nowrap;
+}
+
+.text-content-01{
+  align-self: center;
+  justify-content: start;
+  flex-basis: 300px; 
+}
+
+.text-content-01 h1{
+  font-size: 3rem;
+  word-wrap: break-word;
+  line-break: auto;
+  position: relative; 
+  margin: 10px 0; 
+  line-height: 3rem;
+}
+
+.text-content-01 h1::before{
+  position: absolute;
+  content: url(./05-projeto-pessoal/0513-exportar-projeto-pessoal/projeto-pessoal-arquivos/img/favicon.svg);
+  top: -10px;
+  left: -5px;
+  z-index: -1;
+
+}
+
+.text-content-01 p{
+  color: rgba(0,0,0,.4);
+  font-size: 1.2rem;
+}
 
 /* Content 2 */
 
