@@ -107,7 +107,7 @@ main{
 /* Content 2 */
 .content-02{
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 450px 1fr;
   gap: 20px 200px;
 
 }
@@ -122,6 +122,8 @@ main{
   font-size: 9rem;
   line-height: 15rem;
   max-width: 450px;
+  color: rgba(0,0,0,.2);
+  text-transform: uppercase;
 }
 
 .total-text-content-02{
@@ -256,6 +258,26 @@ main{
 }
 
 /* Content 3 */
+
+.content-03{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 200px;
+}
+
+.title-content-03{
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 9rem;
+  line-height: 15rem;
+  max-width: 450px;
+  color: rgba(0,0,0,.2);
+  text-transform: uppercase;
+}
+
+.all-text-content-03{
+  grid-column: 2;
+}
 
 /* Footer Content */
 
