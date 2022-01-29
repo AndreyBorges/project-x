@@ -1,0 +1,71 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;800&display=swap');
+
+* {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  word-wrap: break-word;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/*Retirar depois*/
+img{
+  max-width: 100%;
+}
+
+/* Content */
+
+body{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+main{
+  display: grid;
+  gap: 40px;
+}
+
+/* Header */
+
+.content-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+}
+.img-header{
+  
+}
+
+.header-list{
+  align-self: center;
+ 
+}
+
+.header-list li{
+  display: inline-block;
+  align-self; color-interpolation-filters; 
+  margin: 10px 20px;
+  text-transform:capitalize;
+}
+
+
+/* Content 1 */
+
+/* Content 2 */
+
+/* Content 3 */
+
+/* Footer Content */
+
+/* Footer */
