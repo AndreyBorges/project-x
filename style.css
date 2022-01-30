@@ -8,6 +8,7 @@
   box-sizing: border-box;
   outline: none;
   word-wrap: break-word;
+
   
 }
 
@@ -28,36 +29,41 @@ img{
 /* Content */
 
 body{
-  max-width: 1500px;
-  margin: 0 auto;
+  padding: 0px auto;
+  
 }
 
 main{
   display: grid;
   gap: 200px;
+  padding: 0 auto;
 }
 
 /* Header */
 
-.content-header{
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0;
 
+.all-header{
+  display: flex;
+  margin: 40px 0;
+  max-width: 1550px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
+
 .img-header{
  background: transparent; 
 }
 
 .header-list{
-  align-self: center;
- 
+  align-self: center; 
+  justify-content: end;
 }
 
 .header-list li{
   display: inline-block;
   align-self:end;
-  margin: 10px 20px;
+
+  margin: 10px 15px;
   text-transform:capitalize;
   font-size: 1.4rem;
 }
@@ -66,9 +72,14 @@ main{
 /* Content 1 */
 
 .content-01{
-  max-height: 1000px;
+ 
+}
+
+.all-content-01{
   display: flex;
-  gap: 95px;
+  gap: 120px;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 
 .img-content-01{
@@ -106,11 +117,18 @@ main{
 }
 
 /* Content 2 */
-.content-02{
+
+.all-content-02{
+  max-width: 100%;
   display: grid;
   grid-template-columns: 450px 1fr;
   gap: 20px 200px;
+  justify-content: center;
+  max-width: 1550px;
+  margin: 0 auto;
 
+
+  
 }
 
 .content-02-list{
@@ -130,8 +148,6 @@ main{
   grid-template-columns: 1fr;
   gap: 80px 0;
 }
-
-
 
 .text-title-content-02{
   grid-column: 2;
@@ -162,6 +178,7 @@ main{
   gap: 10px 130px;
   
 }
+
 .subtitle {
   grid-row: 1;
   font-size: 1.6rem;
@@ -179,6 +196,7 @@ main{
   left: -120px;
   font-weight: normal;
 }
+
 .year-01::after{
   position: absolute;
   content: "";
@@ -236,6 +254,7 @@ main{
   display: flex;
   
 }
+
 .content-02-list li ul li{
   display: inline-block;
   height: 110px;
@@ -256,12 +275,18 @@ main{
 /* Content 3 */
 
 .content-03{
+ 
+  background: #141414;
+  padding-top: 100px;
+}
+
+.all-content-03{
+  max-width: 100%;
   display: grid;
   grid-template-columns: 450px 1fr;
   gap: 200px;
-  background: #141414;
-  padding-top: 100px;
-  height: 1000px;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 
 .title-content-03{
@@ -270,10 +295,6 @@ main{
   line-height: 9rem;
   color: rgba(0,0,0);
   text-transform: uppercase;
-}
-
-.title-content-03{
-  padding: 25px;
 }
 
 .total-text-content-03{
@@ -398,14 +419,24 @@ main{
 
 
 /* Footer Content-01 */
+
+footer{
+  background: black;
+
+}
+
+.all-footer-content{
+  max-width: 1550px;  
+  display: grid;
+  margin: 0 auto;
+}
+
 .footer-content-01{
   display: grid;
   grid-template-columns: 500px 1fr;
   gap: 100px;
   text-align: center;
   height: 300px;
-  background: black;
-  width: 1550px;
   position: relative;
 }
 
@@ -428,7 +459,6 @@ main{
 
 .informations-footer{
   grid-column: 2;
-
   align-self: center;
   font-weight: bolder;
   color: white;
@@ -438,10 +468,8 @@ main{
 /* Footer Content-02 */
 
 .footer-content-02{
-  padding: ;
-  width: 1550px;
-  padding-left: 30px;
-  background: black;
+  max-width: 1550px;
+  margin: 0 auto;
   color: #8F8F8F;
   height: 30px;
   font-size: 1.1rem;
