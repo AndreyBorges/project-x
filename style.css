@@ -29,7 +29,7 @@ img{
 /* Content */
 
 body{
-  padding: 0px auto;
+  margin: 5px;
   
 }
 
@@ -44,10 +44,10 @@ main{
 
 .all-header{
   display: flex;
-  margin: 40px 0;
-  max-width: 1550px;
-  margin: 0 auto;
+  width: 1550px;
+  margin: 10px auto 30px auto;
   justify-content: space-between;
+
 }
 
 .img-header{
@@ -62,7 +62,6 @@ main{
 .header-list li{
   display: inline-block;
   align-self:end;
-
   margin: 10px 15px;
   text-transform:capitalize;
   font-size: 1.4rem;
@@ -89,6 +88,7 @@ main{
 .text-content-01{
   align-self: center;
   flex-basis: 200px; 
+  position: relative;
 }
 
 .text-content-01 h1{
@@ -426,9 +426,10 @@ footer{
 }
 
 .all-footer-content{
-  max-width: 1550px;  
+  width: 1550px;  
   display: grid;
   margin: 0 auto;
+  height: 400px;
 }
 
 .footer-content-01{
@@ -463,14 +464,139 @@ footer{
   font-weight: bolder;
   color: white;
   font-size: 2.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.informations-footer li {
+  display: inline-block;
+  color: white;
 }
 
 /* Footer Content-02 */
 
 .footer-content-02{
-  max-width: 1550px;
-  margin: 0 auto;
+  width: 1550px;
   color: #8F8F8F;
   height: 30px;
   font-size: 1.1rem;
+  margin: 0 auto;
+  background: black;
 }
+
+/* Responsive */
+
+@media (max-width: 1500px) {
+  main{
+    gap:50px
+  }
+
+  .all-content-01{
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  .all-content-02{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .title-content-02{
+    text-align: center;
+  }
+
+  .total-text-content-02{
+    gap:20px;
+  }
+
+  .text-title-content-02{
+    justify-items: center;
+    padding: 0 100px;
+    margin: 0px;
+  }
+
+  .content-02-list{
+    justify-self: center;
+    gap: 10px;
+  }
+
+  .all-content-03{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .title-content-03{
+    justify-self: center;
+  }
+
+  .text-title-content-03{
+    justify-self: center;
+    padding: 0 100px;
+    margin: 0px;
+  }
+
+  .content-03-list-01{
+    justify-content: center;
+  }
+
+  .content-03-list-02{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .content-03-list-02 h3, p{
+    display: inline-block;
+
+  }
+
+  .footer-content-01{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  .all-footer-content{
+    background: black;
+  }
+
+  .text-footer{
+    padding: 0px;
+    align-self:start;
+    margin-left: 150px ;
+  }
+
+  .footer-content-01::before{
+    position: absolute;
+    content: "";
+    top: -65px;
+    left: 100px;
+  }
+
+  .informations-footer li{
+    display: inline-block;
+    justify-items: start;
+  }
+
+  .informations-footer p{
+    text-align: start;
+  }
+
+}
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
